@@ -1,5 +1,7 @@
 site_name: NarrativeConversation
 site_url: https://gpsnmeajp.github.io/NarrativeConversationDoc/
+repo_name: NarrativeConversation
+repo_url: https://github.com/gpsnmeajp/NarrativeConversation
 theme:
   name: material
   language: ja

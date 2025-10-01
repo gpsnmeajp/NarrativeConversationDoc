@@ -1,5 +1,8 @@
 # Narrative Conversation へようこそ
 
++ [リポジトリ](https://github.com/gpsnmeajp/NarrativeConversation)
++ [ダウンロード](https://github.com/gpsnmeajp/NarrativeConversation/releases)
+
 **Narrative Conversation** は、AIを使って自由に物語を作ったり、キャラクターになりきって会話したり、ゲームブックのように遊んだりできるアプリケーションです。
 
 ## このアプリでできること
