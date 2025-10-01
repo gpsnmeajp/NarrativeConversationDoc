@@ -33,7 +33,7 @@
 1. [GitHubのリリースページ](https://github.com/gpsnmeajp/NarrativeConversation/releases/)を開きます
 2. `narrative_conversation_vXXX.zip`（Xはバージョン番号）をクリックしてダウンロードします
 
-![ダウンロードページ](placeholder-download-page.png)
+![alt text](image-7.png)
 
 ### 2. 解凍
 
@@ -72,7 +72,7 @@ INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 + フォルダに同梱されている「開く」ショートカットを開く
 + ブラウザを開いて手動で `http://127.0.0.1:8000` にアクセスする
 
-![起動画面](placeholder-first-launch.png)
+![alt text](image.png)
 
 !!! tip "うまく起動しないときは"
     [よくある質問](../troubleshooting/faq.md)ページを参照してください。

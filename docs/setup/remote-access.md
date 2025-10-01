@@ -66,9 +66,6 @@ Tailscaleを使うと、以下が可能になります：
 2. **「Get Started」** をクリック
 3. Google、GitHub、Microsoft、Appleなどのアカウントでサインアップ
 
-![Tailscaleサインアップ](placeholder-tailscale-signup.png)
-*↑ Tailscaleサインアップ画面のスクリーンショットをここに挿入してください*
-
 ---
 
 ### ステップ2: PC（サーバー側）にTailscaleをインストール
@@ -80,9 +77,6 @@ Tailscaleを使うと、以下が可能になります：
 3. インストーラーをダウンロードして実行
 4. インストール完了後、Tailscaleが自動起動
 5. サインインを求められたら、ステップ1で作成したアカウントでログイン
-
-![Tailscale Windows](placeholder-tailscale-windows.png)
-*↑ Tailscale Windowsアプリのスクリーンショットをここに挿入してください*
 
 #### Linux（Ubuntu/Debian）/ macOS
 
@@ -133,9 +127,6 @@ INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 2. インストール
 3. アプリを開いて、同じアカウントでログイン
 
-![Tailscale Mobile](placeholder-tailscale-mobile.png)
-*↑ Tailscaleモバイルアプリのスクリーンショットをここに挿入してください*
-
 ---
 
 ### ステップ6: スマートフォンからアクセス
@@ -152,8 +143,7 @@ INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
 
 Narrative Conversationの画面が表示される！
 
-![スマホでアクセス](placeholder-mobile-access.png)
-*↑ スマートフォンでアクセスした画面のスクリーンショットをここに挿入してください*
+![alt text](image-8.png)
 
 ---
 

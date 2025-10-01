@@ -35,8 +35,7 @@ Narrative Conversationでは、2種類のWebhookが使えます：
 2. **「Outgoing Webhook URL」** にURLを入力
 3. 自動保存される
 
-![Outgoing Webhook設定](placeholder-outgoing-webhook.png)
-*↑ Outgoing Webhook設定欄のスクリーンショットをここに挿入してください*
+![alt text](image-9.png)
 
 ### 送信されるデータ
 
@@ -53,6 +52,9 @@ Narrative Conversationでは、2種類のWebhookが使えます：
 ```
 
 ### Python受信サンプル
+
+!!! warning "以下のコードは例示です。動作確認をしていません。"
+    実際に使用する場合は、セキュリティやエラーハンドリングを十分に考慮してください。
 
 Webhookを受信するシンプルなPythonサーバーの例：
 
@@ -121,8 +123,7 @@ if __name__ == '__main__':
 2. **「Incoming Webhookを有効にする」** にチェック
 3. 自動保存される
 
-![Incoming Webhook設定](placeholder-incoming-webhook.png)
-*↑ Incoming Webhook設定欄のスクリーンショットをここに挿入してください*
+![alt text](image-10.png)
 
 ### エンドポイント
 

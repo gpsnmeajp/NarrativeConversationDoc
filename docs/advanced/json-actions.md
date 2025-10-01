@@ -56,8 +56,7 @@
 {"device": "light", "color": "blue", "brightness": 30}
 ```
 
-![JSON定義設定](placeholder-json-definition.png)
-*↑ JSON定義設定欄のスクリーンショットをここに挿入してください*
+![alt text](image-6.png)
 
 ### ステップ2: 物語を生成
 
@@ -155,6 +154,9 @@ AIが物語を生成する際、アニメーションに合わせて、適切な
 ## 外部ツールの作成例
 
 ### Python + スマートライト
+
+!!! warning "以下のコードは例示です。動作確認をしていません。"
+    実際に使用する場合は、セキュリティやエラーハンドリングを十分に考慮してください。
 
 ```python
 from flask import Flask, request
