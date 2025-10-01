@@ -98,8 +98,8 @@ nav:
   - トラブルシューティング:
     - よくある質問: troubleshooting/faq.md
 
-extra:
-  consent:
-    title: Cookie consent
-    description: >- 
-      当サイトでは、Cookieを使用しています。
+# extra:
+#   consent:
+#     title: Cookie consent
+#     description: >- 
+#       当サイトでは、Cookieを使用しています。
