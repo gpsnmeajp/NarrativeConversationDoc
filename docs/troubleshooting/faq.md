@@ -190,7 +190,7 @@ Narrative Conversationの使用中によくある質問をまとめました。
     **A.** 以下の方法があります：
 
     1. **OpenRouterの無料モデル**を使う
-    2. **Geminiなどの無料枠のあるAIサービス**を使う
+    2. ~~**Geminiなどの無料枠のあるAIサービス**を使う~~
     3. **ローカルLLM**を使う（LM Studio、Ollama）
 
 ---

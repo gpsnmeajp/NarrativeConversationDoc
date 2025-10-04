@@ -120,8 +120,12 @@ https://openrouter.ai/api/v1
     - **LM Studio**: `http://127.0.0.1:1234/v1`
     - **Ollama**: `http://127.0.0.1:11434/v1`
     - **OpenAI**: `https://api.openai.com/v1`
-    - **Gemini**: `https://generativelanguage.googleapis.com/v1beta/openai/`
+    - ~~**Gemini**: `https://generativelanguage.googleapis.com/v1beta/openai/`~~
     - **Claude**: `https://api.anthropic.com/v1`
+
+!!! warning "重要"
+    ※Gemini APIは、引数エラーとして400が帰ってきてしまうため、現在利用できません。  
+    将来のバージョンで対応を検討します。
 
 #### (2) APIキー
 
