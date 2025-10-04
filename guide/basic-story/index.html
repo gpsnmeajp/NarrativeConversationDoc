@@ -1,0 +1,1782 @@
+
+<!doctype html>
+<html lang="ja" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://gpsnmeajp.github.io/NarrativeConversationDoc/guide/basic-story/">
+      
+      
+        <link rel="prev" href="../../setup/remote-access/">
+      
+      
+        <link rel="next" href="../../advanced/dice-roll/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+    
+    
+      
+        <title>物語を作る - NarrativeConversation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="物語を作る - NarrativeConversation" >
+      
+        <meta  property="og:description"  content="None" >
+      
+        <meta  property="og:image"  content="https://gpsnmeajp.github.io/NarrativeConversationDoc/assets/images/social/guide/basic-story.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://gpsnmeajp.github.io/NarrativeConversationDoc/guide/basic-story/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="物語を作る - NarrativeConversation" >
+      
+        <meta  name="twitter:description"  content="None" >
+      
+        <meta  name="twitter:image"  content="https://gpsnmeajp.github.io/NarrativeConversationDoc/assets/images/social/guide/basic-story.png" >
+      
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          コンテンツにスキップ
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="ヘッダー">
+    <a href="../.." title="NarrativeConversation" class="md-header__button md-logo" aria-label="NarrativeConversation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NarrativeConversation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              物語を作る
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="検索" placeholder="検索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="検索">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="共有" aria-label="共有" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="クリア" aria-label="クリア" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            検索を初期化
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/gpsnmeajp/NarrativeConversation" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    NarrativeConversation
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="タブ" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  ホーム
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../glossary/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  用語集
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../setup/installation/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  セットアップ
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  使い方ガイド
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../advanced/dice-roll/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  高度な機能
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../troubleshooting/faq/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  トラブルシューティング
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="ナビゲーション" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="NarrativeConversation" class="md-nav__button md-logo" aria-label="NarrativeConversation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    NarrativeConversation
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/gpsnmeajp/NarrativeConversation" title="リポジトリへ" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    NarrativeConversation
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ホーム
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    用語集
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    セットアップ
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            セットアップ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    インストール
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/initial-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    初期設定
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/remote-access/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    外部アクセス設定
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    使い方ガイド
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            使い方ガイド
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    物語を作る
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    物語を作る
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      物語作成の基本的な流れ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステップ1: 世界観を設定する
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ステップ1: 世界観を設定する">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1-1. 世界観ビューを開く
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      1-2. 世界観を入力
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステップ2: キャラクターを作成する
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ステップ2: キャラクターを作成する">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#2-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      2-1. 登場人物ビューを開く
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2-2. 新しいキャラクターを追加
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      2-3. 複数のキャラクターを追加
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステップ3: AIに物語を生成させる
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ステップ3: AIに物語を生成させる">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#3-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      3-1. メイン画面に戻る
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      3-2. 司令や地の文を入力
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      3-3. 生成ボタンをクリック
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      3-4. 確認ダイアログ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      3-5. 生成を待つ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      3-6. 生成完了！
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ステップ4: 物語を続ける
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ステップ4: 物語を続ける">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#4-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      4-1. 続きを生成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      4-2. 自分で入力する
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      エントリの編集・削除
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="エントリの編集・削除">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      エントリを編集する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      エントリを削除する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      エントリを挿入する
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      物語を保存する
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      物語をエクスポートする
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="物語をエクスポートする">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      テキスト形式でエクスポート
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#xml" class="md-nav__link">
+    <span class="md-ellipsis">
+      XML形式でエクスポート
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      複数の物語を管理する
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="複数の物語を管理する">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      新しい物語を作成する
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      物語を切り替える
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      物語を削除する
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      次のステップ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      よくある質問
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="よくある質問">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#q-ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q. AIが思ったような展開にしてくれない
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q. キャラクターの口調がおかしい
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q. 生成に時間がかかる
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#q_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Q. 料金が心配
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    高度な機能
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            高度な機能
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/dice-roll/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ダイスロール機能
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/editing-branching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    編集と分岐
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/json-actions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    JSON Actions
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/webhook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Webhook機能
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/export/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    エクスポート
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/advanced-installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    応用的なインストール
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../advanced/local-llm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ローカルLLMを使う
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    トラブルシューティング
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            トラブルシューティング
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    よくある質問
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="_1">物語を作る</h1>
+<p>このページでは、Narrative Conversationで初めて物語を作る手順を、ステップバイステップで説明します。</p>
+<h2 id="_2">物語作成の基本的な流れ</h2>
+<p>初期設定時に最初の物語ファイルは自動的に作成されています。以下の手順で物語を作っていきましょう。</p>
+<ol>
+<li>世界観を設定</li>
+<li>キャラクターを作成</li>
+<li>AIに物語を生成させる</li>
+<li>編集・分岐・保存</li>
+</ol>
+<hr />
+<h2 id="1">ステップ1: 世界観を設定する</h2>
+<p>物語の舞台や設定を決めます。</p>
+<h3 id="1-1">1-1. 世界観ビューを開く</h3>
+<p>上部メニューから <strong>「世界観」</strong> をクリック</p>
+<p><img alt="alt text" src="../image.png" /></p>
+<h3 id="1-2">1-2. 世界観を入力</h3>
+<p>テキストエリアに、物語の世界観を自由に書きます。</p>
+<p><strong>入力例：</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>ここは「アルカディア魔法学園」。
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>世界各地から集まった才能ある魔法使いの卵たちが、
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>魔法の技術と知識を学ぶための学園です。
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>学園は緑豊かな丘の上に建ち、周囲は深い森に囲まれています。
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>生徒たちは寮で共同生活をしながら、
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>魔法の基礎理論から実践まで幅広く学びます。
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>時代設定は現代風ですが、魔法が日常的に使われている世界です。
+</span></code></pre></div>
+<p><img alt="alt text" src="../image-1.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">世界観の書き方のコツ</p>
+<ul>
+<li>箇条書きでもOK、自由な文章でもOK</li>
+<li>時代、場所、特徴的な要素を書く</li>
+<li>既存の小説やアニメの設定を参考にしてもOK</li>
+<li>AIが理解しやすいよう、具体的に書く</li>
+<li>YAMLやJSON形式で書くと、AIの注意が抜けにくく崩れにくいという説があります。</li>
+</ul>
+</div>
+<p>入力すると、右上に <strong>「保存済み」</strong> と表示されます（自動保存）。</p>
+<hr />
+<h2 id="2">ステップ2: キャラクターを作成する</h2>
+<p>物語に登場するキャラクターを設定します。</p>
+<h3 id="2-1">2-1. 登場人物ビューを開く</h3>
+<p>上部メニューから <strong>「登場人物」</strong> をクリック</p>
+<h3 id="2-2">2-2. 新しいキャラクターを追加</h3>
+<ol>
+<li><strong>「新規追加」</strong> ボタンをクリック</li>
+<li>キャラクター情報を入力：</li>
+</ol>
+<p><strong>入力例（主人公）：</strong></p>
+<ul>
+<li><strong>名前</strong>: アリス</li>
+<li><strong>説明</strong>:
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>20歳の女性。明るく前向きな性格で、友達思い。
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>魔法の才能はそこそこだが、努力家で諦めない強さを持つ。
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>火の魔法が得意。少しドジなところがある。
+</span></code></pre></div></li>
+</ul>
+<p><img alt="alt text" src="../image-2.png" /></p>
+<p>入力は自動で保存されます。</p>
+<h3 id="2-3">2-3. 複数のキャラクターを追加</h3>
+<p>同じ手順で、他のキャラクターも追加しましょう。</p>
+<p><strong>入力例（友人キャラ）：</strong></p>
+<ul>
+<li><strong>名前</strong>: ボブ</li>
+<li><strong>説明</strong>:
+  <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>18歳の男子生徒。クールで理論的な性格。
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>魔法理論に詳しく、成績優秀。
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>氷の魔法が得意。アリスとは幼馴染。
+</span></code></pre></div></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">キャラクター作成のコツ</p>
+<ul>
+<li>最初は2〜3人から始めると管理しやすい</li>
+<li>性格、年齢、特技、関係性を書くと良い</li>
+<li>既存のキャラクターをテンプレートにしてもOK</li>
+<li>あとから追加・編集もできます</li>
+<li>YAMLやJSON形式で書くと、AIの注意が抜けにくく崩れにくいという説があります。</li>
+</ul>
+</div>
+<hr />
+<h2 id="3-ai">ステップ3: AIに物語を生成させる</h2>
+<p>いよいよ、AIに物語を作ってもらいます！</p>
+<h3 id="3-1">3-1. メイン画面に戻る</h3>
+<p>上部メニューから <strong>「メイン」</strong> をクリック</p>
+<h3 id="3-2">3-2. 司令や地の文を入力</h3>
+<p><strong>「司令」</strong> の入力欄に、AIへの指示を書きます。</p>
+<p><strong>デフォルトの司令：</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>次の1タグ分のみ生成してください
+</span></code></pre></div></p>
+<p>これは最小単位(1要素づつ)で物語を生成する司令です。<br />
+これでもOKですが、一気に作ることもできます。(なお、一気に進めると結果的に料金も安くなります)</p>
+<p><strong>指示の例：</strong></p>
+<ul>
+<li>「物語を作成してください」</li>
+<li>「アリスとボブが初めて出会うシーンを作ってください」</li>
+<li>「授業中のシーンを作ってください」</li>
+<li>「何か面白い事件を起こしてください」</li>
+<li>「フラペチーノに興味を持たせてください」</li>
+<li>「次の場面転換まで進行してください」</li>
+<li>「次にダイスロールが必要な場面まで進めてください」</li>
+</ul>
+<p><img alt="alt text" src="../image-3.png" /></p>
+<p>後に記載するように、地の文や指示、キャラクターの発言・行動も直接入力できます。<br />
+あらかじめ入力しておくと、方向性が定まりやすくなります。</p>
+<h3 id="3-3">3-3. 生成ボタンをクリック</h3>
+<p>画面右下の <strong>「続きを生成」</strong> ボタン（青色の丸いボタン）をクリック</p>
+<p><img alt="alt text" src="../image-4.png" /></p>
+<h3 id="3-4">3-4. 確認ダイアログ</h3>
+<p>生成を開始すると料金が発生するため、生成前の確認画面が表示されます。<br />
+(料金は、設定したAIモデルとトークン数に応じて決まりますが、多くの場合は1回あたり数円未満です)</p>
+<p>進めてよければ、<strong>「生成開始」</strong> ボタンをクリックします。</p>
+<p><img alt="alt text" src="../image-5.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">確認をスキップする設定</p>
+<p>毎回確認が面倒な場合は、「設定」→「生成前確認をスキップ」にチェックを入れると省略できます。</p>
+</div>
+<h3 id="3-5">3-5. 生成を待つ</h3>
+<p>AIが物語を生成します。数秒〜数十秒かかります。</p>
+<p>生成中は、画面に「生成中...」と表示されます。</p>
+<p><img alt="alt text" src="../image-6.png" /></p>
+<h3 id="3-6">3-6. 生成完了！</h3>
+<p>生成が完了すると、タイムラインに新しいエントリが追加されます。</p>
+<p>アニメーション機能がオンの場合、文字が1文字ずつ表示されます。</p>
+<h2 id="_3"><img alt="alt text" src="../image-7.png" /></h2>
+<h2 id="4">ステップ4: 物語を続ける</h2>
+<h3 id="4-1">4-1. 続きを生成</h3>
+<p>同じように <strong>「 生成」</strong> ボタンをクリックすると、物語が続いていきます。</p>
+<p>司令を変更することで、展開を変えることもできます：</p>
+<ul>
+<li>「会話がたくさん起こるようにしてください」</li>
+<li>「突然事件が起こる展開にしてください」</li>
+<li>「場面を変えて、夜のシーンにしてください」</li>
+</ul>
+<h3 id="4-2">4-2. 自分で入力する</h3>
+<p>AIに任せるだけでなく、自分でエントリ(発言や行動)を追加することもできます。<br />
+司令を「アリスのセリフと行動だけ作ってください」とすれば、あなたはボブになりきって一緒に物語を進めることもできます。</p>
+<p>画面右下からエントリタイプを選択：</p>
+<ul>
+<li><strong>発言（dialogue）</strong>: キャラクターのセリフ</li>
+<li><strong>行動（action）</strong>: キャラクターの行動</li>
+<li><strong>地の文（narration）</strong>: 説明文</li>
+<li><strong>指示（direction）</strong>: 物語への介入</li>
+</ul>
+<p><img alt="alt text" src="../image-8.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">司令と指示の使い分け</p>
+<ul>
+<li>司令は今現在の物語の作成ルールをAIに指示するものです。物語上に残りません。例:「次の場面まで作成してください」</li>
+<li>指示は物語の途中で特定の介入や指定をしたいときに使います。物語上に残ります。例:「ここで爆発が起こります」</li>
+</ul>
+</div>
+<ol>
+<li>キャラクター名（発言・行動の場合）と内容を入力</li>
+<li><strong>「追加」</strong> ボタンをクリック</li>
+<li>満足行くまで追加・編集したら、<strong>「続きを生成」</strong> ボタンをクリックして、物語を進めます。</li>
+</ol>
+<hr />
+<h2 id="_4">エントリの編集・削除</h2>
+<h3 id="_5">エントリを編集する</h3>
+<ol>
+<li>タイムライン上のエントリをクリックし、編集を選択</li>
+<li>内容を修正</li>
+<li><strong>「保存」</strong> (キャラクターの場合は <strong>行動として保存</strong> または <strong>発言として保存</strong> ) または <strong>「キャンセル」</strong></li>
+</ol>
+<h3 id="_6">エントリを削除する</h3>
+<ol>
+<li>エントリをクリック</li>
+<li><strong>「削除」</strong> ボタンをクリック</li>
+<li>確認ダイアログで <strong>「削除」</strong></li>
+</ol>
+<h3 id="_7">エントリを挿入する</h3>
+<ol>
+<li>挿入したい場所の直前のエントリをクリック</li>
+<li><strong>前に挿入</strong> または <strong>「後に挿入」</strong> を選択</li>
+<li>新しいエントリを作成</li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">自由に編集できるのがこのアプリの強み</p>
+<p>通常のAIチャットと違い、過去の内容を自由に編集・削除・挿入できます。納得いくまで物語を調整しましょう！</p>
+</div>
+<p>「これよりあとの項目を全て削除」や「ここから分岐して別の物語ファイルにブランチを作成」も可能です。</p>
+<hr />
+<h2 id="_8">物語を保存する</h2>
+<p><strong>自動保存されます！</strong></p>
+<p>Narrative Conversationでは、編集内容が自動的に保存されます。</p>
+<ul>
+<li>エントリを追加・編集すると、数秒後に自動保存</li>
+<li>右上の「保存済み」表示で確認できる</li>
+<li>手動で保存する必要はありません</li>
+</ul>
+<hr />
+<h2 id="_9">物語をエクスポートする</h2>
+<p>作成した物語を、他の形式で保存できます。</p>
+<h3 id="_10">テキスト形式でエクスポート</h3>
+<ol>
+<li>「物語」パネルの <strong>「管理」</strong> タブをクリック</li>
+<li><strong>「エクスポート」</strong> セクションで <strong>「テキスト」</strong> を選択</li>
+<li><strong>「エクスポート」</strong> ボタンをクリック</li>
+<li>ブログやSNSに貼り付けやすいテキストが表示されます。コピーも可能です。</li>
+</ol>
+<h3 id="xml">XML形式でエクスポート</h3>
+<p>AIが理解しやすい形式で保存されます。上級者向け。</p>
+<p>詳しくは <a href="../../advanced/export/">エクスポート機能</a> を参照してください。</p>
+<hr />
+<h2 id="_11">複数の物語を管理する</h2>
+<p>2回目以降、別の物語を作りたい場合は以下の手順で新規作成できます。</p>
+<h3 id="_12">新しい物語を作成する</h3>
+<ol>
+<li><strong>「物語」</strong> パネルの右側にある <strong>「管理」</strong> タブをクリック</li>
+<li><strong>「新規の物語を作成」</strong> セクションで以下を入力：</li>
+<li><strong>物語のタイトル</strong>: 例）「SF宇宙戦記」</li>
+<li><strong>説明（任意）</strong>: 例）「宇宙を舞台にしたSF物語」</li>
+<li><strong>「作成する」</strong> ボタンをクリック</li>
+<li><strong>「タイムライン」</strong> タブをクリックして、物語の表示画面に戻ります。</li>
+</ol>
+<div class="admonition success">
+<p class="admonition-title">作成完了</p>
+<p>「物語ファイル」のドロップダウンに、作成した物語が表示されます。</p>
+</div>
+<div class="admonition tips">
+<p class="admonition-title">物語が長くなってきて、生成時間やコストが気になる場合</p>
+<p>「要約して新しい物語を開始」を使うと、現在の物語を要約して続きの物語を始められます。<br />
+要約の際の条件などは、応用的な設定画面の<strong>「要約設定(システムプロンプト)」</strong>で調整できます。</p>
+</div>
+<p><img alt="alt text" src="../image-9.png" /></p>
+<h3 id="_13">物語を切り替える</h3>
+<p>「物語ファイル」のドロップダウンから、別の物語を選択できます。</p>
+<h3 id="_14">物語を削除する</h3>
+<p>「管理」タブの「削除」セクションから、不要な物語を削除できます。</p>
+<div class="admonition warning">
+<p class="admonition-title">削除は画面上からは元に戻せません</p>
+<p>画面操作での復元はできませんが、以下を試してください：<br />
+backupsフォルダ内のstoriesに30世代までのバックアップが保存されています。<br />
+これをメモ帳などのテキストエディタで開き、dataフォルダ内の物語ファイルに上書きすることで、復元できる可能性があります。</p>
+</div>
+<hr />
+<h2 id="_15">次のステップ</h2>
+<p>基本的な使い方をマスターしたら、以下もお試しください：</p>
+<ul>
+<li><strong><a href="../../advanced/editing-branching/">物語の編集と分岐</a></strong> - 高度な編集テクニック</li>
+</ul>
+<hr />
+<h2 id="_16">よくある質問</h2>
+<h3 id="q-ai">Q. AIが思ったような展開にしてくれない</h3>
+<p><strong>A.</strong> 「司令」で具体的に指示してみましょう。</p>
+<p>例：</p>
+<ul>
+<li>「続きを書いて」</li>
+<li>「アリスが魔法を失敗して、爆発を起こすシーンを書いて」</li>
+</ul>
+<h3 id="q">Q. キャラクターの口調がおかしい</h3>
+<p><strong>A.</strong> キャラクター説明に、口調や話し方を追加しましょう。</p>
+<p>例：
+<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>丁寧語で話す。「〜ですわ」「〜ませんの」といった口調を使う。
+</span></code></pre></div></p>
+<h3 id="q_1">Q. 生成に時間がかかる</h3>
+<p><strong>A.</strong> 以下を確認してください：</p>
+<ul>
+<li>ネットワーク速度が遅い</li>
+<li>使っているAIモデルが重い</li>
+<li>トークン数が多すぎる（設定で最大トークン数を調整）</li>
+</ul>
+<h3 id="q_2">Q. 料金が心配</h3>
+<p><strong>A.</strong> 画面下部に推定コストが表示されます。</p>
+<ul>
+<li>まずは無料モデルで試す</li>
+<li>トークン単価の安いモデルを選ぶ</li>
+<li>生成回数を控えめにする</li>
+</ul>
+<hr />
+<p>さあ、あなただけの物語を作り始めましょう！ </p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  ページトップへ戻る
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.indexes", "toc.follow", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "search.share", "content.tooltips"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u30b3\u30d4\u30fc\u3057\u307e\u3057\u305f", "clipboard.copy": "\u30af\u30ea\u30c3\u30d7\u30dc\u30fc\u30c9\u3078\u30b3\u30d4\u30fc", "search.result.more.one": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3082\u30461\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.more.other": "\u3053\u306e\u30da\u30fc\u30b8\u5185\u306b\u3042\u3068#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.none": "\u4f55\u3082\u898b\u3064\u304b\u308a\u307e\u305b\u3093\u3067\u3057\u305f", "search.result.one": "1\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.other": "#\u4ef6\u898b\u3064\u304b\u308a\u307e\u3057\u305f", "search.result.placeholder": "\u691c\u7d22\u30ad\u30fc\u30ef\u30fc\u30c9\u3092\u5165\u529b\u3057\u3066\u304f\u3060\u3055\u3044", "search.result.term.missing": "\u691c\u7d22\u306b\u542b\u307e\u308c\u306a\u3044", "select.version": "\u30d0\u30fc\u30b8\u30e7\u30f3\u5207\u308a\u66ff\u3048"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
